@@ -1,4 +1,5 @@
 import React from 'react';
+import './NoteList.css';
 
 function NoteList({ notes, onEdit, onDelete }) {
   return (

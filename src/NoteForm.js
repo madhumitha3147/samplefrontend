@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import API from './api';
+import './NoteForm.css';
 
 function NoteForm({ note, onSave }) {
   const [title, setTitle] = useState('');

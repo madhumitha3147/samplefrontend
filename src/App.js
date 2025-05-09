@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import NoteList from './NoteList';
 import NoteForm from './NoteForm';
 import API from './api';
+import './App.css';
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>📝 Notes with Tags</h1>
+      <h1>📝 Notes App</h1>
       <NoteForm note={editingNote} onSave={handleSave} />
       <NoteList notes={notes} onEdit={handleEdit} onDelete={handleDelete} />
     </div>
